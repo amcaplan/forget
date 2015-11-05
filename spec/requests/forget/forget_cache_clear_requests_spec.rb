@@ -8,6 +8,7 @@ RSpec.describe "CacheClearRequests", type: :request do
     before do
       Rails.cache.write(key, value)
       expect(Rails.cache.read(key)).to eq(value)
+      expect(Forget::CacheClearing.count).to eq(0)
     end
 
     context 'When a request is made to clear the cache' do
@@ -21,6 +22,10 @@ RSpec.describe "CacheClearRequests", type: :request do
 
       it 'removes the value from the cache' do
         expect(Rails.cache.read(key)).to be_nil
+      end
+
+      it 'saved a record that the cache was cleared' do
+        expect(Forget::CacheClearing.count).to eq(1)
       end
     end
   end
