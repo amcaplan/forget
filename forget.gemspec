@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Forget::VERSION
   s.authors     = ["amcaplan"]
   s.email       = ["ariel.caplan@vitals.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Forget."
-  s.description = "TODO: Description of Forget."
+  s.homepage    = "http://railsremoteconf.com"
+  s.summary     = "Summary of Forget."
+  s.description = "Description of Forget."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
