@@ -2,3 +2,19 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.button_to input[type=submit] {
+  background: #fa5503;
+  background-image: -webkit-linear-gradient(top, #fa5503, #ad2626);
+  background-image: -moz-linear-gradient(top, #fa5503, #ad2626);
+  background-image: -ms-linear-gradient(top, #fa5503, #ad2626);
+  background-image: -o-linear-gradient(top, #fa5503, #ad2626);
+  background-image: linear-gradient(to bottom, #fa5503, #ad2626);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
